@@ -1,0 +1,32 @@
+name: Problem practice
+description: Track one reviewed problem without copying its statement.
+title: "practice: "
+labels:
+  - practice
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Original problem link
+      placeholder: https://leetcode.com/problems/...
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: First approach
+      description: Summarize constraints, brute force, and the intended optimization.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] Optimized Go implementation
+        - [ ] Targeted tests
+        - [ ] Time and space complexity
+        - [ ] Pattern note
+        - [ ] Mistake or revision note
+    validations:
+      required: true
