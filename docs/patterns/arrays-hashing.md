@@ -30,9 +30,24 @@ For lowercase English anagrams, a `[26]int` letter-frequency array is comparable
 - Space: `O(n * k)` for the output and grouped strings
 - Limitation: the fixed 26-entry signature assumes lowercase English letters.
 
+## Frequency Buckets
+
+Use frequency buckets when frequencies are bounded by the input length and the
+highest-frequency values are needed without sorting every distinct value.
+
+For Top K Frequent Elements, count each value, place it into the bucket indexed
+by its frequency, then scan the buckets from highest to lowest until `k` values
+have been collected.
+
+- Time: `O(n)` expected
+- Space: `O(n)`
+- Important detail: allocate `n + 1` buckets because one value may occur `n` times.
+- Output order is unspecified because values enter buckets from map iteration.
+
 ## Review Questions
 
 - What constraints make a hash map appropriate?
 - Is the key a value, complement, frequency, or canonical representation?
+- Is the frequency range bounded tightly enough for bucket ordering?
 - Does the solution depend on expected constant-time hashing?
 - Which input assumptions should be validated or documented?

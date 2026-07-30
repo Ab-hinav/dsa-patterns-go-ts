@@ -17,7 +17,7 @@ A curated coding-interview practice repository focused on reusable problem-solvi
 | [Two Sum](https://leetcode.com/problems/two-sum/) | Complement lookup | Yes | Planned | Reviewed |
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Hash-set membership | Yes | Planned | Solved clean |
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Canonical frequency signature | Yes | Planned | Solved clean |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Frequency map and bucket ordering | Active | Planned | In progress |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Frequency map and bucket ordering | Yes | Planned | Solved clean |
 
 Only links and original notes are included. Problem statements remain on their original platforms.
 
@@ -29,6 +29,8 @@ arrays-hashing/
   contains_duplicate_test.go
   group_anagrams.go
   group_anagrams_test.go
+  top_k_frequent.go
+  top_k_frequent_test.go
   two_sum.go
   two_sum_test.go
 docs/
@@ -70,14 +72,14 @@ Each problem follows the same review loop:
 
 ## Evidence
 
-- Tests cover empty inputs, duplicate values, missing results, repeated words, and order-independent anagram groups.
+- Tests cover empty inputs, duplicate values, missing results, repeated words, order-independent anagram groups, and frequency-bucket selection.
 - GitHub Actions runs the complete Go test suite on each push and pull request.
 - Pattern notes explain when the technique applies, why it works, and its limitations.
 
 ## Roadmap
 
-- Complete Top K Frequent Elements.
-- Add two-pointers and sliding-window pattern groups.
+- Start the two-pointers pattern drill.
+- Add the sliding-window pattern group after two pointers.
 - Add selected TypeScript comparisons.
 - Add benchmark exercises only when performance differences are meaningful.
 - Complete a 25-, 45-, and 60-minute mock-interview cycle.
