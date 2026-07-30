@@ -19,6 +19,12 @@ A curated coding-interview practice repository focused on reusable problem-solvi
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Canonical frequency signature | Yes | Planned | Solved clean |
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Frequency map and bucket ordering | Yes | Planned | Solved clean |
 
+### Two Pointers
+
+| Problem | Pattern | Go | TypeScript | Review status |
+|---|---|---:|---:|---|
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Opposite-direction pointers | Yes | Planned | Solved clean |
+
 Only links and original notes are included. Problem statements remain on their original platforms.
 
 ## Repository Structure
@@ -33,6 +39,9 @@ arrays-hashing/
   top_k_frequent_test.go
   two_sum.go
   two_sum_test.go
+two-pointers/
+  valid_palindrome.go
+  valid_palindrome_test.go
 docs/
   decisions/
   patterns/
@@ -58,6 +67,12 @@ Run the arrays-and-hashing tests with detailed output:
 go test -v ./arrays-hashing
 ```
 
+Run the two-pointers tests with detailed output:
+
+```bash
+go test -v ./two-pointers
+```
+
 ## Learning Method
 
 Each problem follows the same review loop:
@@ -72,13 +87,13 @@ Each problem follows the same review loop:
 
 ## Evidence
 
-- Tests cover empty inputs, duplicate values, missing results, repeated words, order-independent anagram groups, and frequency-bucket selection.
+- Tests cover empty inputs, duplicate values, missing results, repeated words, order-independent anagram groups, frequency-bucket selection, pointer skipping, mixed case, punctuation, and digits.
 - GitHub Actions runs the complete Go test suite on each push and pull request.
 - Pattern notes explain when the technique applies, why it works, and its limitations.
 
 ## Roadmap
 
-- Start the two-pointers pattern drill.
+- Continue the two-pointers pattern drill with ordered convergence.
 - Add the sliding-window pattern group after two pointers.
 - Add selected TypeScript comparisons.
 - Add benchmark exercises only when performance differences are meaningful.
