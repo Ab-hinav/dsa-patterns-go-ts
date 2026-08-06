@@ -24,6 +24,7 @@ A curated coding-interview practice repository focused on reusable problem-solvi
 | Problem | Pattern | Go | TypeScript | Review status |
 |---|---|---:|---:|---|
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Opposite-direction pointers | Yes | Planned | Solved clean |
+| [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Ordered convergence | Yes | Planned | Solved clean |
 
 Only links and original notes are included. Problem statements remain on their original platforms.
 
@@ -40,6 +41,8 @@ arrays-hashing/
   two_sum.go
   two_sum_test.go
 two-pointers/
+  two_sum_sorted.go
+  two_sum_sorted_test.go
   valid_palindrome.go
   valid_palindrome_test.go
 docs/
@@ -87,13 +90,13 @@ Each problem follows the same review loop:
 
 ## Evidence
 
-- Tests cover empty inputs, duplicate values, missing results, repeated words, order-independent anagram groups, frequency-bucket selection, pointer skipping, mixed case, punctuation, and digits.
+- Tests cover empty inputs, duplicate values, missing results, repeated words, order-independent anagram groups, frequency-bucket selection, pointer skipping, mixed case, punctuation, digits, sorted boundaries, and distinct-index handling.
 - GitHub Actions runs the complete Go test suite on each push and pull request.
 - Pattern notes explain when the technique applies, why it works, and its limitations.
 
 ## Roadmap
 
-- Continue the two-pointers pattern drill with ordered convergence.
+- Continue the two-pointers pattern drill with greedy pointer movement.
 - Add the sliding-window pattern group after two pointers.
 - Add selected TypeScript comparisons.
 - Add benchmark exercises only when performance differences are meaningful.
