@@ -25,6 +25,12 @@ A curated coding-interview practice repository focused on reusable problem-solvi
 |---|---|---:|---:|---|
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Opposite-direction pointers | Yes | Planned | Solved clean |
 
+### Sliding Window
+
+| Problem | Pattern | Go | TypeScript | Review status |
+|---|---|---:|---:|---|
+| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Positive-sum threshold window | Yes | Planned | Solved with hint |
+
 Only links and original notes are included. Problem statements remain on their original platforms.
 
 ## Repository Structure
@@ -42,6 +48,9 @@ arrays-hashing/
 two-pointers/
   valid_palindrome.go
   valid_palindrome_test.go
+sliding-window/
+  min_subarray_len.go
+  min_subarray_len_test.go
 docs/
   decisions/
   patterns/
@@ -73,6 +82,12 @@ Run the two-pointers tests with detailed output:
 go test -v ./two-pointers
 ```
 
+Run the sliding-window tests with detailed output:
+
+```bash
+go test -v ./sliding-window
+```
+
 ## Learning Method
 
 Each problem follows the same review loop:
@@ -87,14 +102,14 @@ Each problem follows the same review loop:
 
 ## Evidence
 
-- Tests cover empty inputs, duplicate values, missing results, repeated words, order-independent anagram groups, frequency-bucket selection, pointer skipping, mixed case, punctuation, and digits.
+- Tests cover empty inputs, duplicate values, missing results, repeated words, order-independent anagram groups, frequency-bucket selection, pointer skipping, mixed case, punctuation, digits, and threshold-window shrinking.
 - GitHub Actions runs the complete Go test suite on each push and pull request.
 - Pattern notes explain when the technique applies, why it works, and its limitations.
 
 ## Roadmap
 
 - Continue the two-pointers pattern drill with ordered convergence.
-- Add the sliding-window pattern group after two pointers.
+- Expand sliding-window coverage with fixed-size and uniqueness-based examples.
 - Add selected TypeScript comparisons.
 - Add benchmark exercises only when performance differences are meaningful.
 - Complete a 25-, 45-, and 60-minute mock-interview cycle.
